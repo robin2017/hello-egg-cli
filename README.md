@@ -5,3 +5,5 @@
 $ npm run dev
 $ open http://localhost:7001/
 ```
+
+#### 2、mysql配置成功

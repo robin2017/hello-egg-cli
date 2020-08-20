@@ -6,4 +6,10 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
+  //开启mysql插件
+  mysql: {
+    enable: true,
+    package: 'egg-mysql',
+  }
 };
+
