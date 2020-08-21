@@ -1,7 +1,7 @@
 /* eslint valid-jsdoc: "off" */
 
 'use strict';
-
+const hostname = require('os').hostname()
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -42,7 +42,11 @@ module.exports = appInfo => {
     // 是否加载到 agent 上，默认关闭
     agent: false,
   };
-
+  //适配工作电脑和个人电脑
+  if (hostname === 'Robin') {
+    config.mysql.client.password = '123456';
+    config.mysql.client.database = 'midway_db'
+  }
   return {
     ...config,
     ...userConfig,

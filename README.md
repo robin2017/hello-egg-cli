@@ -7,3 +7,6 @@ $ open http://localhost:7001/
 ```
 
 #### 2、mysql配置成功
+
+#### 3、通过os.hostname()适配不同电脑
+
